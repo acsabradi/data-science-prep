@@ -1,0 +1,4 @@
+- Versatility and simplicity
+- Extensive range of applications
+- Readability and user-friendliness
+- Comprehensive standard library
