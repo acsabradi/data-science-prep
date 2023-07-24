@@ -31,7 +31,7 @@ Odds ratio is similar to $R^2$ because both metric describes relationship. The h
 
 Similar to $R^2$, we want to know if the odds ratio is statistically significant.
 
-**Chi square test**
+### [[Chi square test]]
 https://www.youtube.com/watch?v=7_cs1YlZoug
 https://www.youtube.com/watch?v=HKDqlYSLt68
 https://www.youtube.com/watch?v=2QeDRsxSF9M
