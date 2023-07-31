@@ -33,7 +33,24 @@ Similar to $R^2$, we want to know if the odds ratio is statistically significant
 
 ### [[Chi square test]]
 
-**Wald test**
+$H_0$: Mutated gene doesn't have any effect on having cancer.
 
+**Expected values:**
 
+|                           | Has Cancer: Yes | No  |
+|---------------------------|-----------------|-----|
+| **Has mutated gene: Yes** | 11.2              | 128.8 |
+| **No**                    | 17.3               | 198.7 |
 
+### Wald test
+
+The Wald test takes advantage of the fact that the log of the odd ratios are zero centered normally distributed.
+
+Standard deviation: $\sqrt{\sum_i 1/observation_i}=0.47$  
+
+$$
+\frac{23/117}{6/210}=6.88 \rightarrow log(6.88)=1.93 \rightarrow 1.93/0.47=4.11
+$$
+The log of the odd ratios is 4.11 standard deviations away from the mean of the distribution.
+
+The rule of thumb for normal distributions is that anything further than 2 standard deviations from the mean will have a $p$-value less than 0.05, so we know that the calculated log value is statistically significant.
