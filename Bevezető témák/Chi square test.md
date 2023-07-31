@@ -31,6 +31,9 @@ $$
 $$
 Degree of freedom: Number of observed data points - 1 = 5
 
+> [!note]
+> The degree of freedom is the number of observed data points minus 1 because if we would know a statistical metric (e.g. mean) of the data, then the last data point could be deduced using the other data points and the metric.
+
 ![[chi-square-table.pdf]]
 
 The critical $\chi^2$ value is 11.07, our result is more extreme than this, we reject $H_0$.
@@ -39,4 +42,33 @@ The critical $\chi^2$ value is 11.07, our result is more extreme than this, we r
 
 [Source](https://www.youtube.com/watch?v=hpWdDmgsIRE)
 
-ToDo
+Drug test result (contingency table):
+
+|                | Drug 1 | Drug 2 | Placebo | Total |
+|----------------|--------|--------|---------|-------|
+| **# sick**     | 20     | 30     | 30      | 80    |
+| **# not sick** | 100    | 110    | 90      | 300   |
+| **Total**      | 120    | 140    | 120     | 380   |
+
+$H_0$: The drugs do nothing.
+$H_1$: The drugs do something.
+$\alpha=0.1=10\%$
+
+|                | Drug 1 | Drug 2 | Placebo | Total |
+|----------------|--------|--------|---------|-------|
+| **# sick**     | 20     | 30     | 30      | 80    |
+| **Expected**   | 25.3   | 29.4   | 25.3    | 21%   |
+| **# not sick** | 100    | 110    | 90      | 300   |
+| **Expected**   | 94.7   | 110.6  | 94.7    | 79%   |
+| **Total**      | 120    | 140    | 120     | 380   |
+
+We assume that $H_0$ is true, so we take the whole population (380) and calculate how many of them was sick or not (21% and 79%). Based on this we calculate the expected values of each test group.
+
+We get the $\chi^2$ the same way as before:
+$$
+\chi^2=\sum_{i}\frac{(Expected_i-Observed_i)^2}{Observed_i}=\frac{(25.3-20)^2}{20}+...=2.528
+$$
+
+Degree of freedom: (number of rows - 1) * (number of columns - 1) = 2
+
+The table above shows that the critical $\chi^2$ value is 4.6, our value is less extreme, thus we can't reject $H_0$.
