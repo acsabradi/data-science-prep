@@ -7,7 +7,7 @@ Ridge Regression does this by minimizing:
 $$
 (\sum_{i=1}^n (y_i - (a * x_i + b))^2) + \lambda * a^2
 $$
-$\lambda * a^2$ adds a penalty to the expression to be minimized. Minimalizing this expression adds a small bias to the fitted line by lowering the slope. Lower slope means that the output is less sensitive to the changes of the input.
+$\lambda * a^2$ adds a penalty to the expression to be minimized. Minimizing this expression adds a small bias to the fitted line by lowering the slope. Lower slope means that the output is less sensitive to the changes of the input.
 
 $\lambda$ controls how much do we want to penalize high slopes. Higher $\lambda$ means lower slope, the slope asymptotically approaches 0 as $\lambda$ increases to infinity.
 
