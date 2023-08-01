@@ -3,3 +3,4 @@
 [[Tanulási típusok]]
 [[Algoritmusok]]
 [[Fundamentals]]
+[[Dimensionality reduction]]
