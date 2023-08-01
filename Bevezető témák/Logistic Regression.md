@@ -59,7 +59,7 @@ p = \frac{e^{log(odds)}}{1+e^{log(odds)}}
 $$
 This equation comes from the logit function.
 
-Finally, we add the logs of probabilities of classifying a record to the correct group:
+Finally, we add the logs of probabilities of classifying a record to the correct group.
 
 That gives us the likelihood of the given slope. The algorithm tries to find the highest likelihood value.
 

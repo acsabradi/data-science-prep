@@ -19,7 +19,7 @@ $p$-value of the log-likelihood $R^2$ is: Null Deviance - Residual Deviance
 
 Simpler version: $2*(LL(Proposed)-LL(Null))$
 
-The logistic regression omits the saturated model because it would mean line going through all the data:
+The logistic regression omits the saturated model because it would mean the best fit line going through all the data:
 
 ![[saturated-model-logistic-regression-example.png|500]]
 The log-likelihood of such line would be zero.
