@@ -2,3 +2,4 @@
 [[Tooling]]
 [[Tanulási típusok]]
 [[Algoritmusok]]
+[[Fundamentals]]
