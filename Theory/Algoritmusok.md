@@ -1,3 +1,6 @@
 [[Linear Regression]]
 [[Linear Models]]
 [[Logistic Regression]]
+[[Tree methods]]
+[[Naive Bayes]]
+[[Clustering]]
