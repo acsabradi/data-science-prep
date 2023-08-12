@@ -81,7 +81,47 @@ This gives us a $\chi^2$-value, where the degrees of freedom is the parameter nu
 
 Note: The equations of the metrics above are simplified for the logistic regression, they omit the saturated model value.
 
+### Math background
+
+$$
+Y = \frac{1}{1+e^{-(b_0+b_1x)}}
+$$
+Applying logit-function to the probability values and plotting it gives us a straight line:
+$$
+ln(odds)=b_0+b_1x
+$$
+
+Odds ratio (OR): $e^{b_1}$ 
+
+Binomial distribution:
+$$
+P(k)={n \choose k}p^k(1-p)^{n-k}
+$$
+$$
+{n \choose k}=\frac{n!}{k!(n-k)!}
+$$
+Logistic regression can be viewed as a special case where each data point is one trial, thus $n=1 \rightarrow {n \choose k}=1$.
+
+This results in the Bernoulli distribution:
+$$
+P(k)=p^k(1-p)^{1-k}
+$$
+Likelihood:
+$$
+L = \prod_{i=1}^n p_i^{y_i}(1-p_i)^{1-y_i}
+$$
+$$
+p_i^{y_i}(1-p_i)^{1-y_i} = p_i \quad if \quad y_i=1
+$$
+$$
+p_i^{y_i}(1-p_i)^{1-y_i} = 1-p_i \quad if \quad y_i=0
+$$
+Likelihood result is usually close to zero, so log likelihood is commonly used:
+$$
+LL = \sum_{i=1}^n log(p_i^{y_i}(1-p_i)^{1-y_i})
+$$
+We calculate $LL$ values when evaluating different [[Saturated model|models and deviances]].
+
 Related topics:
 [[Log of odds]]
-[[Saturated model]]
 

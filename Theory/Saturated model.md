@@ -11,13 +11,13 @@ R^2=\frac{LL(Null)-LL(Proposed)}{LL(Null)-LL(Saturated)}
 $$
 Without the scaling factor of $LL(Saturated)$ the $R^2$ value could be higher than 1.
 
-**Residual Deviance**: $2*(LL(Saturated)-LL(Proposed))$ which gives us a $\chi^2$-value with degree of freedom equal to the difference in the number of parameters.
+==**Residual Deviance**==: $2*(LL(Saturated)-LL(Proposed))$ which gives us a $\chi^2$-value with degree of freedom equal to the difference in the number of parameters.
 
-**Null Deviance**: $2*(LL(Saturated)-LL(Null))$ which gives us a $\chi^2$-value with degree of freedom equal to the difference in the number of parameters.
+==**Null Deviance**==: $2*(LL(Saturated)-LL(Null))$ which gives us a $\chi^2$-value with degree of freedom equal to the difference in the number of parameters.
 
-$p$-value of the log-likelihood $R^2$ is: Null Deviance - Residual Deviance
-
-Simpler version: $2*(LL(Proposed)-LL(Null))$
+> [!tip] Likelihood ratio test (LRT)
+> $p$-value of the log-likelihood $R^2$ is: Null Deviance - Residual Deviance
+>Simpler version: $2*(LL(Proposed)-LL(Null))$
 
 The logistic regression omits the saturated model because it would mean the best fit line going through all the data:
 
