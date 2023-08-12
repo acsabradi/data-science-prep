@@ -2,3 +2,5 @@
 [[Data formats]]
 [[Sampling]]
 [[ROC curve]]
+[[Entropy]]
+[[Mutual Information]]

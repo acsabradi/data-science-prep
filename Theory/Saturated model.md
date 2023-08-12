@@ -23,3 +23,6 @@ The logistic regression omits the saturated model because it would mean the best
 
 ![[saturated-model-logistic-regression-example.png|500]]
 The log-likelihood of such line would be zero.
+
+Related topics:
+[[Deviance residuals]]

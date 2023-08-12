@@ -4,3 +4,4 @@
 [[Tree methods]]
 [[Naive Bayes]]
 [[Clustering]]
+[[Support Vector Machine (SVM)]]

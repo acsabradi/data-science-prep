@@ -4,3 +4,4 @@
 [[Algoritmusok]]
 [[Fundamentals]]
 [[Dimensionality reduction]]
+[[Neural Networks]]
