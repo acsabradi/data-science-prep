@@ -21,6 +21,10 @@
 **Notes:**
 - The eigenvalues are the variances of the PCs
 - By summing up the variance, we can calculate that how much variation each PC accounts for $\rightarrow$ ==Scree-plot==: graphical representation of PC variations
+- ==Normalizing the data points==: $Z = \frac{X-X_{mean}}{SD}=\frac{X-X_{mean}}{\sqrt{Var(X)}}$
+- Deciding which components to use:
+	- Smallest number of components that together hold 80-90% of the total variance.
+	- Kaiser criterion: Components with greater variance than the mean of the variances.
 
 **Math background:**
 ==Covariance matrix== of 2 variables:
@@ -67,7 +71,7 @@ v_x \\
 v_y \\
 \end{bmatrix}
 $$
-This gives us two equations and a result like this: $y=1.37x$. By choosing $x=1$, we have one of the eigenvectors (before normalizing it):
+This gives us two equations and a result like this: $y=1.37x$. By choosing $x=1$, we have one of the eigenvectors (before making it a unit vector):
 $$
 \begin{bmatrix}  
 1 \\  
