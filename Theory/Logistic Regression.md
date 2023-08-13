@@ -92,6 +92,7 @@ ln(odds)=b_0+b_1x
 $$
 
 Odds ratio (OR): $e^{b_1}$ 
+![[logistic-regression-coefficient-interpretation.png|600]]
 
 Binomial distribution:
 $$
