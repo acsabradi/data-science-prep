@@ -94,7 +94,7 @@ $$
 Odds ratio (OR): $e^{b_1}$ 
 ![[logistic-regression-coefficient-interpretation.png|600]]
 
-Binomial distribution:
+Binomial distribution: ^b62f00
 $$
 P(k)={n \choose k}p^k(1-p)^{n-k}
 $$
@@ -103,7 +103,7 @@ $$
 $$
 Logistic regression can be viewed as a special case where each data point is one trial, thus $n=1 \rightarrow {n \choose k}=1$.
 
-This results in the Bernoulli distribution:
+This results in the Bernoulli distribution: ^b892dc
 $$
 P(k)=p^k(1-p)^{1-k}
 $$

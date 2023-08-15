@@ -1,3 +1,20 @@
+# Topics
+
+- Stats
+	- Expectation
+	- Variance
+	- Covariance
+	- Correlation
+- Random variables
+	- Uniform
+	- [[Logistic Regression#^b892dc|Bernoulli]]
+	- [[Logistic Regression#^b62f00|Binomial]]
+	- Geometric
+	- Poisson
+	- Normal
+	- $\chi^2$
+- Bayes Theorem
+- Joint Distribution
 # What is the $\beta$ coefficient of a multi-variant regression? How do you derive it? How do you derive it in a non-closed form?
 
 >[!note]
@@ -43,3 +60,26 @@ $$
 - What if the confidence interval includes one in the odds ratio domain?
 	- Same question as before because $OR=e^\beta$, so odds ratio is one if the coefficient is zero.
 	- In this case, OR is not statistically distinguishable from one.
+
+# You picked a coin. What's the chance of the coin being biased (both sides are tails) if all 5 flips were tails?
+
+==Bayes Theorem==:
+$$
+P(\text{Biased}|\text{5 Tails})=
+\frac{P(\text{5 Tails}|\text{Biased})P(\text{Biased})}
+{P(\text{5 Tails})}
+$$
+Suppose that $P(\text{Biased})=0.5$. If a biased coin is chosen then:
+$$
+P(\text{5 Tails}|\text{Biased})=1.0
+$$
+Using ==Law of Total Probability== to calculate:
+$$
+P(\text{5 Tails})=P(\text{5 Tails}|\text{Fair})P(\text{Fair})+
+P(\text{5 Tails}|\text{Biased})P(\text{Biased})
+$$
+We need to calculate $P(\text{5 Tails}|\text{Fair})$ using Binomial Probability:
+$$
+P(\text{5 Tails}|\text{Fair})=
+\frac{5!}{5!0!} 0.5^5 0.5^0
+$$
