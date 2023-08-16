@@ -38,9 +38,15 @@ $$
 $$
 Var(X)=\frac{1}{n-1}\sum_{i=1}^{n}(X_i-X_{mean})^2
 $$
+
+^eee9be
+
 $$
 Cov(X,Y)=\frac{1}{n-1}\sum_{i=1}^{n}(X_i-X_{mean})(Y_i-Y_{mean})=Cov(Y,X)
 $$
+
+^a25bc2
+
 ==Eigenvalues==:
 $$
 det|C-\lambda I|=0
