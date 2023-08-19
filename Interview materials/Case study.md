@@ -24,6 +24,22 @@
 		- The clusters can be ==interpreted using descriptive statistics== to create user profiles
 5. Conclude
 	- low frequency active session in one cluster $\rightarrow$ targeted email to encourage engagement
+
+## Additional points
+
+### Data pipeline
+- https://www.ibm.com/topics/data-pipeline
+	- https://www.ibm.com/topics/exploratory-data-analysis
+	- https://www.ibm.com/topics/data-visualization
+	- https://www.ibm.com/topics/machine-learning
+- https://hazelcast.com/glossary/data-pipeline/
+	- https://hazelcast.com/glossary/stream-processing/
+
+### Testing
+- https://deepchecks.com/how-to-test-machine-learning-models/
+- https://www.analyticsvidhya.com/blog/2022/01/writing-test-cases-for-machine-learning/
+- https://mlops.community/the-what-why-and-how-of-a-b-testing-in-ml/
+
 # [Measure driver satisfaction @ Lyft](https://www.youtube.com/watch?v=DqgiUo44X-k)
 
 - Business purpose of measuring driver satisfaction?
@@ -39,11 +55,7 @@
 	- The output is the probability of churn
 	- Inputs: driver profile, engagement, geo, etc.
 - The marketing team could target the group with high churn probability
-# ToDo - possible use case points
 
-- Trigger for executing the model
-- Model testing
-- Data pipeline
 # [Finding influencers on Instagram](https://www.youtube.com/watch?v=XOJk0AKIqv8)
 
 - Definition:
