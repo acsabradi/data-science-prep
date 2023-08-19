@@ -1,11 +1,11 @@
 # Examples
 
 - Forecasting product sales @ Amazon
-- ==Meaningful== segmentation of Apple's customers $\downarrow$
+- ==Meaningful== segmentation of Apple's customers (see elaboration below $\downarrow$)
 # [Response Framework](https://www.youtube.com/watch?v=DqgiUo44X-k)
 
 1. Clarify
-	- "What is the business objective of the segmentation? Is it for product research or marketing?" $\rightarrow$ Which segmentation is ==meaningful==?
+	- "What is the business objective of the segmentation? Is it for product research or marketing?" $\rightarrow$ What kind of segmentation is ==meaningful==?
 	- "Should I focus on all Apple domain or just one (e.g. Apple Music)?"
 2. Constrain
 	- Stating the defined goal after clarification
@@ -14,7 +14,7 @@
 4. Method
 	- Preparing data:
 		- user profiles
-		- user behavior
+		- user behaviour
 		- marketing ==engagement data==
 	- ==Feature engineering to extract signals==:
 		- \# of active minutes or sessions in Apple Music in the past 10 days

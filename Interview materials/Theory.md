@@ -140,7 +140,7 @@ $$
 
 # Explain the confidence interval of the logistic regression
 
-- 95% confidence interval: 95% of the time the actual coefficient will fall into the estimated confidence interval $\rightarrow [\mu-2\sigma, \mu+2\sigma]$ **-> ToDo**
+- 95% confidence interval: 95% of the time the actual coefficient will fall into the estimated confidence interval $\rightarrow [\mu-2\sigma, \mu+2\sigma]$ **-> ToDo: statistical tests**
 - It represents our uncertainty around the variable.
 - What if the confidence interval includes zero in the log-odds domain?
 	- The coefficient is not statistically distinguishable from zero.
