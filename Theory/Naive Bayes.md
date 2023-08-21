@@ -13,3 +13,5 @@ Calculation of step 4 can result in zero if a word is not in the training data o
 It is a naive algorithm because it doesn't take into account the structure of the language, it treats all words as independent from each other. It has a high bias but low variance because of this.
 
 The same steps can be applied for normal distributions, too. By calculating the mean and standard deviance of the data vectors, we can define normal distributions for all of them. The conditional probabilities come from these distributions instead of histograms.
+
+The conditional probabilities can be close to zero thus computers can't calculate them correctly (underflow). To prevent this, take the log sums of the conditional probabilities.
