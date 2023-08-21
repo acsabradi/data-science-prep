@@ -40,6 +40,43 @@
 - https://www.analyticsvidhya.com/blog/2022/01/writing-test-cases-for-machine-learning/
 - https://mlops.community/the-what-why-and-how-of-a-b-testing-in-ml/
 
+# [Detecting spam accounts on social platform](https://www.youtube.com/watch?v=sD468LfeVdc)
+
+Features to be investigated:
+
+- Content of the posts
+	- Accounts tagged
+	- Keyword hashtags
+	- Timing of the post
+	- Words in the post
+	- Links
+	- Images
+	- Are the contents similar?
+	- How many times is the post reported spam?
+- Account that makes the post
+	- \# followers
+	- \# accounts followed
+	- Are the followers spam accounts?
+	- \# spam reports
+	- email address
+- Other
+	- Similarity of posts in small time frame
+
+Feature vector:
+
+- \# followers
+- \# accounts followed
+- \# spam reports
+- email evaluation
+	- domain names
+		- one-hot encoded
+
+Creating labelled training data:
+
+- Naive labeling system:
+	- If reported $X$ times $\rightarrow$ label as spam
+	- No report $\rightarrow$ no spam
+- Getting evaluation from users
 # [Measure driver satisfaction @ Lyft](https://www.youtube.com/watch?v=DqgiUo44X-k)
 
 - Business purpose of measuring driver satisfaction?
